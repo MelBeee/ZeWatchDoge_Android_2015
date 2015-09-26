@@ -27,7 +27,10 @@
                 android:stretchColumns="true"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText1" />
+                android:id="@+id/editText1"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:maxLength="11"/>
         </TableRow>
 
         <TableRow
@@ -43,7 +46,10 @@
                 android:stretchColumns="true"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2" />
+                android:id="@+id/editText2"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:maxLength="3"/>
         </TableRow>
 
         <TableRow
@@ -59,7 +65,10 @@
                 android:stretchColumns="true"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText3" />
+                android:id="@+id/editText3"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:maxLength="3"/>
         </TableRow>
 
         <TableRow
@@ -75,7 +84,10 @@
                 android:stretchColumns="true"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4"/>
+                android:id="@+id/editText4"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:maxLength="5"/>
         </TableRow>
     </TableLayout>
     </LinearLayout>
