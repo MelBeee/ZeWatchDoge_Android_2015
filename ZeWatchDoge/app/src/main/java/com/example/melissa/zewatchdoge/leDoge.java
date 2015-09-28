@@ -60,6 +60,7 @@ public class leDoge extends AppCompatActivity {
 
     // fonction appelé lors du clic sur le bouton demarrer
     public void Demarrer(View v) {
+
         // verifie si l'utilsateur a bien rempli les champs
         if(!VerifET())
         {
@@ -69,6 +70,7 @@ public class leDoge extends AppCompatActivity {
         }
         else
         {
+            TV_Liste.setText("");
             // on va chercher les informations qu'il a écrit
             S_Adresse = ET_AdresseSousReseau.getText().toString();
             S_Debut = ET_DebutPlage.getText().toString();
@@ -176,7 +178,7 @@ public class leDoge extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void resultat) {
             Toast message = Toast.makeText(leDoge.this,
-                    "Recherche terminé !", Toast.LENGTH_SHORT);
+                    "Recherche terminée !", Toast.LENGTH_SHORT);
             message.show();
         }
     }
