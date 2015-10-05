@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HobbitChat</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="TerreDuMileu_Spin">
+        <item>La Comté</item>
+        <item>Mordor</item>
+        <item>Isengard</item>
+    </string-array>
+
+    <string name="Btn_Connecter">Connecter</string>
+
+
+
+</resources>
