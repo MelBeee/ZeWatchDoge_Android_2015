@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="charlielaplante_201356187.hobbitchat.Communication">
+
+    <Button
+        android:id="@+id/Btn_Envoyer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Btn_Envoyer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="StartEnvoyerThread"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/anHint"
+        android:id="@+id/ET_Message"
+        android:layout_above="@id/Btn_Envoyer"/>
+    <CheckBox
+        android:id="@+id/CB_ShowAddressIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CBChecked"/>
+    <TextView
+        android:id="@+id/TV_AdresseIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP:"
+        android:layout_above="@+id/UnScrollView"
+        android:layout_toRightOf="@+id/CB_ShowAddressIP"/>
+
+
+    <ScrollView
+        android:id="@+id/UnScrollView"
+        android:layout_below="@id/CB_ShowAddressIP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@id/ET_Message">
+        <TextView
+            android:id="@+id/TV_Message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </ScrollView>
+
+
+</RelativeLayout>

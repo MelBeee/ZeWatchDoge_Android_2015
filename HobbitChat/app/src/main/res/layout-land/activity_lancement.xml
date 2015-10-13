@@ -9,8 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
         <TableRow>
-            <TextView
-                android:id="@+id/Adresse"
+            <TextView android:id="@+id/Adresse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
                 <Spinner
@@ -36,8 +35,6 @@
                 android:layout_width="wrap_content"/>
             <EditText
                 android:id="@+id/ET_Port"
-                android:digits="0123456789"
-                android:inputType="numberDecimal"
                 android:layout_width="0dp"
                 android:layout_weight = "4"
                 android:layout_height="wrap_content"/>

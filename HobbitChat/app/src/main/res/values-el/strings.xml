@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HobbitChat</string>
+
+    <string name="action_settings">ρυθμίσεις</string>
+
+    <string name="Btn_Connecter">σύνδεση</string>
+    <string name="title_activity_communication">Cανακοίνωση</string>
+    <string name="Btn_Envoyer">στείλετε</string>
+    <string name="AdresseIP">διεύθυνση :</string>
+    <string name="Username">όνομα χρήστη :</string>
+    <string name="Port">λιμάνι :</string>
+    <string-array name="IP_Array">
+        <item>το Σάιρ</item>
+        <item>Μόρντορ</item>
+        <item>Isengard</item>
+    </string-array>
+    <string name="anHint">Γράψτε εδώ</string>
+
+</resources>
