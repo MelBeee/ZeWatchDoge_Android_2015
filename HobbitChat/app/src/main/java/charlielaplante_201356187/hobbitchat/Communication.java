@@ -196,21 +196,27 @@ public class Communication extends AppCompatActivity {
 
     //------------ICI ON RECOIT DES MESSAGES------------\\
 
+	// 
     public void RecevoirMSG()
     {
         try
         {
+			// transforme l'ip en inetaddress
             adresse = InetAddress.getByName(Ip);
-
+			// initialise, nombre de bite maximum qu'on peut recevoir
             tamponRecevoir = new byte[1024];
-
+			// Faire un paquet avec les tampons pour l'envoyer au serveur
             paquetRecevoir = new DatagramPacket(tamponRecevoir, 0,tamponRecevoir.length,adresse,Integer.parseInt(port));
-
+			// Creer le socket en multicast mais on lui dit quel port écouter
             socketRecevoir = new MulticastSocket(Integer.parseInt(port));
+			// Timeout pour que l'application fonctionne lorsqu'on change de tchat. 
+			// Si l'application ne fait plus rien parce qu'on a changer et reste pris dans la boucle, 
+			// il va changer pour terminer le thread
             socketRecevoir.setSoTimeout(1000);
-
+			// Pour join le groupe multicast a tel adresse au port mentionné plus haut
             socketRecevoir.joinGroup(adresse);
-
+			
+			// Debute l'Async 
             new ThreadRecevoir().execute();
 
         }catch(Exception e)
@@ -233,10 +239,14 @@ public class Communication extends AppCompatActivity {
                 {
                     try
                     {
+						// Recoit un paquet de tampon qui est en fait un message
                         socketRecevoir.receive(paquetRecevoir);
+						// Decompose le paquet recu pour avoir un message clair soit "Nom : Message"
                         String LeMessageRecus  = new String(paquetRecevoir.getData(),paquetRecevoir.getOffset(),paquetRecevoir.getLength());
-                        String LeIp = paquetRecevoir.getAddress().toString();
+                        // Trouve l'adresse IP d'origine du paquet
+						String LeIp = paquetRecevoir.getAddress().toString();
                         LeIp = LeIp.substring(1);
+						// On va afficher le message
                         publishProgress(LeMessageRecus,LeIp);
 
                     }catch(SocketTimeoutException ex) { }
@@ -254,7 +264,7 @@ public class Communication extends AppCompatActivity {
             if(IpOn)
             {
                 // si oui, on affiche l'ip + le nom + le message
-                MessageRecus.append(values[0].toString() +"("+ values[1].toString() +")"+ "\n" );
+                MessageRecus.append("("+ values[1].toString() +")" + values[0].toString() + "\n" );
             }
             else
             {
