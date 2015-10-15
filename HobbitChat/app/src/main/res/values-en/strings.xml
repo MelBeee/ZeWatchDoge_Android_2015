@@ -15,5 +15,11 @@
         <item>Isengard</item>
     </string-array>
     <string name="anHint">Write here</string>
+    <string name="checkbox">Show ip</string>
 
+    <string name="BornePort">Port range is 1024 to 65535.</string>
+    <string name="BorneMaxPort">A port is constitued of 4 or 5 figures</string>
+    <string name="BorneUsager">Your name has to be 2 to 8 characters long</string>
+    <string name="BorneMSG">A message must be between 1 and 60 characters</string>
+    <string name="BorneVide">An empty message can not be sent</string>
 </resources>

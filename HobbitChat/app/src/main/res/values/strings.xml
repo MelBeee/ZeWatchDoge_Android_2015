@@ -16,6 +16,13 @@
     <string name="Username">Nom usager :</string>
     <string name="Port">Port :</string>
     <string name="anHint">Écrire ici</string>
+    <string name="checkbox">Afficher ip</string>
+
+    <string name="BornePort">Un port se situe entre 1024 et 65535.</string>
+    <string name="BorneMaxPort">Un port se constitue de 4 ou 5 chiffres.</string>
+    <string name="BorneUsager">Un nom doit avoir entre 2 et 8 caractères.</string>
+    <string name="BorneMSG">Un message doit avoir entre 1 et 60 caracteres</string>
+    <string name="BorneVide">Un message vide ne peut pas être envoyé</string>
 
 
 </resources>

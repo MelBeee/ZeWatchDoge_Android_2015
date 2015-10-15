@@ -16,4 +16,12 @@
     </string-array>
     <string name="anHint">Γράψτε εδώ</string>
 
+    <string name="checkbox">Εμφάνιση IP</string>
+
+    <string name="BornePort">Μια θύρα είναι μεταξύ 1024 και 65535</string>
+    <string name="BorneMaxPort">Μια θύρα αποτελείται από 4 ή 5 ψηφία</string>
+    <string name="BorneUsager">Το όνομα πρέπει να είναι μεταξύ 2 και 8 χαρακτήρες</string>
+    <string name="BorneMSG">Ένα μήνυμα πρέπει να είναι μεταξύ 1 και 60 χαρακτήρων</string>
+    <string name="BorneVide">Ένα κενό μήνυμα δεν μπορεί να αποσταλεί</string>
+
 </resources>

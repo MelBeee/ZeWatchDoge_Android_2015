@@ -27,14 +27,8 @@
         android:id="@+id/CB_ShowAddressIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="CBChecked"/>
-    <TextView
-        android:id="@+id/TV_AdresseIP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="IP:"
-        android:layout_above="@+id/UnScrollView"
-        android:layout_toRightOf="@+id/CB_ShowAddressIP"/>
+        android:onClick="CBChecked"
+        android:text="@string/checkbox"/>
 
 
     <ScrollView

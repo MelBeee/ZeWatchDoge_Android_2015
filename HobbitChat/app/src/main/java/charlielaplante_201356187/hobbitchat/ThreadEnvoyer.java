@@ -7,12 +7,8 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
-/**
- * Created by 201356187 on 2015-10-09.
- */
 public class ThreadEnvoyer implements  Runnable
 {
-
     byte tamponEnvoyer[];
     DatagramPacket paquetEnvoyer;
     MulticastSocket socketEnvoyer;
@@ -20,8 +16,6 @@ public class ThreadEnvoyer implements  Runnable
     InetAddress adresseEnvoyer;
     String Port;
     String leUsername;
-
-
 
     public ThreadEnvoyer(String Message,InetAddress adresse, String Port, String Username)
     {

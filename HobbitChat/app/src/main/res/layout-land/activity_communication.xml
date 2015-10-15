@@ -22,12 +22,20 @@
         android:id="@+id/ET_Message"
         android:layout_above="@id/Btn_Envoyer"/>
 
+    <CheckBox
+        android:id="@+id/CB_ShowAddressIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CBChecked"
+        android:layout_above="@id/ET_Message"
+        android:text="@string/checkbox"/>
+
     <ScrollView
         android:id="@+id/UnScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:layout_above="@id/ET_Message">
+        android:layout_above="@id/CB_ShowAddressIP">
         <TextView
             android:id="@+id/TV_Message"
             android:layout_width="fill_parent"
